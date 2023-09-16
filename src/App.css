@@ -336,6 +336,10 @@
   font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+.text-container{
+  margin-bottom: 40px;
+}
+
 .card-component-header {
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -416,8 +420,7 @@
 
   .demoExperience-container {
     margin-left: 10px;
-    flex-direction: column;
-    width: fit-content;
+    width: 100%;
   }
 
   .demoExperience-container-Demo-button {
@@ -441,12 +444,17 @@
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .Demo-button {
-    width: auto;
+    width: 100%;
     margin-bottom: 20px;
+  }
+
+  .card-container{
+    margin-left: 50px;
   }
 
   .inner-content {
     margin-top: 23%;
+    flex-direction: column;
   }
 
   .header {
@@ -454,15 +462,30 @@
   }
 
   .figure-caption {
-    display: none;
-  }
+      position: absolute;
+      margin-bottom: -20px;
+      left: 0;
+      width: auto;
+      margin-left: 40%;
+      padding: 1em 1.25em;
+      border-radius: 12px;
+      background: #ffffff;
+    }
+
 
   .inner-content-header {
-    width: 20ch;
+    width: 28ch;
   }
 
   .body-image {
     max-width: 100%;
+  }
+
+
+  .innerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .Cards-list {
@@ -476,13 +499,30 @@
     font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: black;
     height: 40px;
-    width: inherit;
     cursor: pointer;
+    padding: 0 30%;
     border: 1px solid #534CF1;
   }
 
   .demoExperience-container {
     flex-direction: column;
+    margin-left: 6%;
+    width: 80%;
+  }
+
+  .inner-card-paragraph {
+    max-width: 20ch;
+  }
+
+  .inner-card-heading {
+    max-width: 20ch;
+  }
+
+  .figure-caption {
+    bottom: unset;
+    width: auto;
+    margin-left: 15%;
+    margin-top: -30%;
   }
 
   .footerComponent {
@@ -497,7 +537,7 @@
   }
 
   .Demo-button {
-    width: auto;
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -506,11 +546,11 @@
     left: 0;
     bottom: unset;
     width: auto;
-    margin-left: 40%;
+    margin-left: 15%;
     padding: 1em 1.25em;
     border-radius: 12px;
     background: #ffffff;
-    margin-top: -100px;
+    margin-top: -30%;
   }
 
   .Cards-list {
@@ -529,6 +569,8 @@
 
   .demoExperience-container {
     flex-direction: column;
+    margin-left: 6%;
+    width: 80%;
   }
 
   .demoExperience-container-Demo-button {
@@ -662,6 +704,5 @@
     font-size: 0.85em;
     color: #706E73;
   }
-  
 
 }
